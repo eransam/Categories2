@@ -41,11 +41,30 @@ const Categories = () => {
     }
 
 
+    const delCategory = (id) => {
+
+        setCategories(current =>
+            current.filter(cate => {
+              return cate.id !== id;
+            }),
+          );
+
+          console.log("categories: " ,categories);
+          const thecate = JSON.stringify(categories);
+          console.log("categorihjcfghfcghes: " );
+  
+          console.log("thecate: " ,thecate);
+          localStorage.setItem('categories', thecate);
+    }
+
+
+
+
     return (
         <div>
             <h1>Category List</h1>
             <NewCategory addCategory={addCategory} parentId = {null} />
-            { categories.map((category) => !category.parentId && <Category key={category.id} addCategory={addCategory} category={category} categories={categories} />)}
+            { categories.map((category) => !category.parentId && <Category key={category.id} addCategory={addCategory} delCategory={delCategory} category={category} categories={categories} />)}
         </div>
     )
 }
