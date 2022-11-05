@@ -3,6 +3,7 @@
     padding: 1rem;
     width: 90%;
     max-width: 40rem;
+    padding-inline-start: 80px;
   }
   
   .input label {
@@ -49,3 +50,17 @@
     width: fit-content;
     display: inline-block;
 }
+
+.catName{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.vise{
+    visibility: visible;
+}
+
+.viseOff{
+    visibility: hidden;
+}
+
