@@ -10,10 +10,6 @@ const DeleteCategory = ({id ,delCategory}) => {
 
       };
 
-
-
-
-
     return (
         <div className="add-category">
 

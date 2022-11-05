@@ -63,7 +63,8 @@ const Categories = () => {
     return (
         <div>
             <h1>Category List</h1>
-            <NewCategory addCategory={addCategory} parentId = {null} />
+            
+            <div className="AddAMainCategory"><p>Add a main category</p><NewCategory addCategory={addCategory} parentId = {null} /></div>
             { categories.map((category) => !category.parentId && <Category key={category.id} addCategory={addCategory} delCategory={delCategory} category={category} categories={categories} />)}
         </div>
     )

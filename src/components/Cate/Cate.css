@@ -24,3 +24,28 @@
     outline: none;
     border-color: #4f005f;
   }
+
+
+  .catName div{
+    width: fit-content;
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+  
+
+.NewCategoryDivHidden{
+    visibility: hidden;
+    margin-top: 10px;
+}
+
+.NewCategoryDivVisible{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+
+.AddAMainCategory * {
+    width: fit-content;
+    display: inline-block;
+}
