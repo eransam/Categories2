@@ -37,11 +37,11 @@ function openChildren(event) {
 }
 
 
-    return (
+    return ( 
         <div id="mainNewCategory" >
         <ul className="category">
-            <button onClick={openChildren}>test</button>
-            <li><div className="catName"><div>{" " +category.name}</div><DeleteCategory delCategory = {delCategory}  id = {category.id} /></div></li>
+            
+            <li><div className="catName"><div><button onClick={openChildren}> ⇅ </button>{" " +category.name}</div><DeleteCategory delCategory = {delCategory}  id = {category.id} /></div></li>
             <IconButton onClick={changeInputClass} aria-label="delete" size="large" >
             <AddCircleIcon fontSize="inherit" className="AddCircleIcon"/>
             </IconButton> 
